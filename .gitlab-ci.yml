@@ -69,7 +69,7 @@ Release image:
     - apk add --no-cache openssh
     - eval $(ssh-agent -s)
     - echo "SSH_PRIVATE_KEY" | base64 -d > /tmp/id_rsa
-    - chmod 600 /tmp/id_rsa
+    - chmod 700 /tmp/id_rsa
     - ssh-add /tmp/id_rsa
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
