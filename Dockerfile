@@ -1,6 +1,6 @@
 ARG version="latest"
 FROM nginx:${version}
-LABEL maintainer="hermann brice"
+LABEL maintainer="hermann"
 
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 RUN rm -rf /usr/share/nginx/html/* && git clone https://github.com/diranetafen/static-website-example.git /usr/share/nginx/html/
